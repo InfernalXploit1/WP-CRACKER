@@ -30,7 +30,7 @@ def check_password():
 # === Putar Lagu ===
 def play_music():
     try:
-        return subprocess.Popen(["mpv", "--loop=inf", "lagu.mp3"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+        return subprocess.Popen(["mpv", "--loop=inf", "Lagu.mp3"], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     except FileNotFoundError:
         print(Fore.RED + "[⚠] Gagal memutar lagu! Pastikan 'mpv' terinstal dan file 'lagu.mp3' tersedia.")
 
